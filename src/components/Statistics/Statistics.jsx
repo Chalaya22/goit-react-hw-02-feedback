@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import css from './Statistics.module.css';
 
-const Statistics = () => {
+const Statistics = ({ good, neutral, bad, total, percentage }) => {
   return (
     <div>
       <h2>Statistics</h2>
       <ul>
-        <li>Good:</li>
-        <li>Neutral:</li>
-        <li>Bad:</li>
-        <li>Total:</li>
-        <li>Positive feedback:</li>
+        <li>Good: {good}</li>
+        <li>Neutral: {neutral}</li>
+        <li>Bad: {bad}</li>
+        <li>Total feedback: {total}</li>
+        <li>Positive feedback: {percentage} %</li>
       </ul>
     </div>
   );

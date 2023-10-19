@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import css from './FeedbackOptions.module.css';
-const FeedbackOptions = ({ options }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
       {Object.keys(options).map(option => (
@@ -9,7 +9,7 @@ const FeedbackOptions = ({ options }) => {
           key={option}
           className={css.feedbackBtn}
           name={option}
-          // onClick={onLeaveFeedback}
+          onClick={() => onLeaveFeedback(option)}
         >
           {option}
         </button>
