@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import css from './FeedbackOptions.module.css';
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
+    <div className={css.feedbackButtonList}>
       {Object.keys(options).map(option => (
         <button
           type="button"
