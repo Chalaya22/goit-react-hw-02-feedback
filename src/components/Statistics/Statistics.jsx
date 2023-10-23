@@ -3,7 +3,6 @@ import css from './Statistics.module.css';
 const Statistics = ({ good, neutral, bad, total, percentage }) => {
   return (
     <div className={css.statistic}>
-      <h2 className={css.statisticTitle}>Statistics</h2>
       <ul className={css.siaiticList}>
         <li>
           Good: <span className={css.stylevalue}>{good}</span>

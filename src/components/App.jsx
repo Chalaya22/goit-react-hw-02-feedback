@@ -40,6 +40,8 @@ export class App extends Component {
             options={this.state}
             onLeaveFeedback={this.addFeedback}
           />
+        </Section>
+        <Section title="Statistics">
           {totalFeedback ? (
             <Statistics
               good={good}
